@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="search1688api",
-    version="1.0.0",
+    version="1.0.1",
     author="netkaruma",
     author_email="suzumekaruma@gmail.com",
     description="Python library for searching products on 1688.com by image",
