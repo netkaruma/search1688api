@@ -111,6 +111,7 @@ session.default_timeout = 45  # 现在所有请求超时时间为 45 秒
 | id | str | 商品 ID |
 | name | str | 商品名称 |
 | brand | str | 商品品牌 |
+| price | str | 价格 |
 | company | str | 公司名称 |
 | grade | str | 商品评分 |
 | weight | str | 商品重量/体积 |

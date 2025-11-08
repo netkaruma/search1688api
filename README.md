@@ -111,6 +111,7 @@ session.default_timeout = 45  # Теперь все запросы будут с
 | `id` | `str` | ID товара |
 | `name` | `str` | Название товара |
 | `brand` | `str` | Бренд товара |
+| `price` | `str` | Цена |
 | `company` | `str` | Название компании |
 | `grade` | `str` | Рейтинг товара |
 | `weight` | `str` | Вес/объем товара |

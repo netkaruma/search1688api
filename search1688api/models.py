@@ -101,6 +101,9 @@ class DetailProduct:
             # Название товара
             self.name = self._get_nested_value(["result", "data", "gallery", "fields", "subject"])
             
+            # Цена доставки - ДОБАВЛЕННЫЙ ПУТЬ
+            self.price = self._get_nested_value(["result", "data", "shippingServices", "fields", "price"])
+            
             # Бренд и вес из featureAttributes
             attributes = self._get_nested_value(["result", "global", "globalData", "model", "offerDetail", "featureAttributes"])
             self.brand = None
@@ -175,7 +178,8 @@ class DetailProduct:
             "weight": self.weight,
             "goods": self.goods,
             "repeat_orders": self.repeat_orders,
-            "saledCount": self.saledCount
+            "saledCount": self.saledCount,
+            "price": self.price
         }
 
 

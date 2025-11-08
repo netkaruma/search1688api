@@ -300,7 +300,7 @@ class Async1688Session:
                             print(f"JSON decode error: {e}")
                             return None
                     else:
-                        print("No JSON data found in HTML")
+                        print("1688.com blocked information from json")
                         return None
                 else:
                     print(f"HTTP error: {response.status}")
