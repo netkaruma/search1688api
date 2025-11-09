@@ -164,7 +164,7 @@ if detailed_product:
 ## Лицензия
 ## Доступ к сессии aiohttp
 ```python
-async with Async1688Session as customSession:
+async with Async1688Session() as customSession:
     session = customSession.session
 ```
 MIT
