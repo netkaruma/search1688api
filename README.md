@@ -122,12 +122,12 @@ session.default_timeout = 45  # Теперь все запросы будут с
 
 ## Методы
 ```python
-search_by_image(image_path: str, timeout: float = None) -> List[Product]
+search_by_image(image_path: str, default_timeout: float = None) -> List[Product]
 ```
 
 ### Параметры:
 1. **image_path** - путь к файлу изображения
-2. **timeout** - таймаут запроса в секундах (по умолчанию используется default_timeout сессии)
+2. **default_timeout** - таймаут запроса в секундах (по умолчанию используется 30 секунд)
 ### Возвращает: список объектов Product
 
 ```python
@@ -136,7 +136,7 @@ get_by_id(offer_id: str, timeout: float = None) -> DetailProduct
 ### Получение детальной информации о товаре по его ID.
 ### Параметры:
 1. **offer_id** - ID товара на 1688.com
-2. **timeout** - таймаут запроса в секундах (по умолчанию используется default_timeout сессии)
+2. **default_timeout** - таймаут запроса в секундах (по умолчанию используется 30 секунд)
 ### Возвращает: объект DetailProduct или None если товар не найден
 
 ## Конвертация в словарь
@@ -153,7 +153,7 @@ print(product_dict)
 
 ## Работа с вариантами товара
 ```python
-detailed_product = session.get_by_id("741375431874", timeout=30)
+detailed_product = session.get_by_id("741375431874", default_timeout=30)
 if detailed_product:
     for variant in detailed_product.goods:
         print(f"Вариант: {variant['name']}")
