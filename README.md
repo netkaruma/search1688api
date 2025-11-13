@@ -1,4 +1,4 @@
-# 1688 Search API by Image 
+# 1688 API Search by Image 
 
 A Python library for searching products on 1688.com by image.
 As well as parsing product data by ID/SKU.
