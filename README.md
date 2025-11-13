@@ -161,10 +161,11 @@ if detailed_product:
         print(f"Изображение: {variant['imageUrl']}")
 ```
 
-## Лицензия
 ## Доступ к сессии aiohttp
 ```python
 async with Async1688Session() as customSession:
     session = customSession.session
 ```
+
+## Лицензия
 MIT
