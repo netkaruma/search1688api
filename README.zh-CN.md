@@ -161,6 +161,12 @@ if detailed_product:
         print(f"Изображение: {variant['imageUrl']}")
 ```
 
+## 访问aiohttp会话
+```python
+async with Async1688Session() as customSession:
+    session = customSession.session
+```
+
 ## 许可证
 
 MIT
