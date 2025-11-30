@@ -19,6 +19,7 @@ from search1688api import Sync1688Session
 
 with Sync1688Session(debug = False, proxy = proxy) as session:
     products = session.search_by_image("path/to/image.jpg")
+    products = session.search_by_text("search query")
 ```
 
 ### Asynchronous version
@@ -30,9 +31,7 @@ import asyncio
 async def main():
 
     async with Async1688Session(debug = False, proxy = proxy) as session:
-
         response = await session.search_by_image("path/to/image.jpg")
-
         response = await session.search_by_text("rose-colored glasses")
         
 asyncio.run(main())
