@@ -17,7 +17,7 @@ pip install search1688api
 ```python
 from search1688api import Sync1688Session
 
-with Sync1688Session(debug = False, proxy = proxy) as session:
+with Sync1688Session(debug = False, proxies = proxies) as session:
     products = session.search_by_image("path/to/image.jpg")
     products = session.search_by_text("search query")
 ```
