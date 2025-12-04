@@ -47,5 +47,5 @@ search_by_text(image_path: str, debug = True) -> List[]
 1. **image_path** - path to the image file
 2. **debug** - using logging
 
-## Лицензия
+## LICENSE
 MIT
