@@ -30,7 +30,7 @@ import asyncio
 
 async def main():
 
-    async with Async1688Session(debug = False, proxy = proxy) as session:
+    async with Async1688Session(debug = False, proxies = proxies) as session:
         response = await session.search_by_image("path/to/image.jpg")
         response = await session.search_by_text("rose-colored glasses")
         
