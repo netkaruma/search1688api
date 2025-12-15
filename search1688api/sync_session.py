@@ -495,7 +495,7 @@ class Sync1688Session(requests.Session):
                 "beginPage": 1,
                 "pageSize": 60,
                 "method": "getOfferList",
-                "pageId": "qWJOoeNkRwblv903Iv6KQqPVkYDrgMudKHTRsee9Sjz7N9z1",  # fixed pageId
+                "pageId": "qWJOoeNkRwblv903Iv6KQqPVkYDrgMudKHTRsee9Sjz7N9z1",
                 "verticalProductFlag": "pcmarket",
                 "searchScene": "pcOfferSearch",
                 "charset": "GBK",
@@ -520,7 +520,7 @@ class Sync1688Session(requests.Session):
             
             # Parameters as in call stack
             params = {
-                "jsv": "2.7.4",  # version from stack
+                "jsv": "2.7.4",
                 "appKey": self.app_key,
                 "t": timestamp,
                 "sign": sign,
