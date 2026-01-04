@@ -42,8 +42,8 @@ search_by_text(image_path: str, debug = True) -> List[]
 ```
 
 ### 选项:
-1. **image_path** - path to the image file
-2. **debug** - using logging
+1. **image_path** - 图像文件路径
+2. **debug** - 使用日志记录功能
 
 ## 许可证
 MIT
