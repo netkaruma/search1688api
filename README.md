@@ -16,6 +16,10 @@ pip install search1688api
 from search1688api import Sync1688Session
 
 with Sync1688Session(debug = False, proxy = proxy) as session:
+
+    # 要修改会话参数，可以直接访问会话对象
+    session.cookies_dict['_m_h5_tk'] = '我的新令牌_1234567890'
+
     products = session.search_by_image("path/to/image.jpg")
     products = session.search_by_text("search query")
 ```
