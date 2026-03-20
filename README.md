@@ -2,7 +2,7 @@
 
 一个用于通过图片|文字在1688.com上搜索产品的Python库。
 
-## 安装p
+## 安装
 
 ```bash
 pip install search1688api
