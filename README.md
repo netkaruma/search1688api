@@ -18,7 +18,7 @@ from search1688api import Sync1688Session
 with Sync1688Session(debug = False, proxies = proxies) as session:
 
     # 要修改会话参数，可以直接访问会话对象
-    session.cookies_dict['_m_h5_tk'] = '我的新令牌_1234567890'
+    session.cookies_dict['_m_h5_tk'] = 'a5684f3729bb00ef0c8208249107d061_1720690129578'
 
     products = session.search_by_image("path/to/image.jpg")
     products = session.search_by_text("search query")
@@ -30,9 +30,11 @@ with Sync1688Session(debug = False, proxies = proxies) as session:
 from search1688api import Async1688Session
 import asyncio
 
+proxy_url = "http://user:password@proxy.example.com:8080"
+
 async def main():
 
-    async with Async1688Session(debug = False, proxies = proxies) as session:
+    async with Async1688Session(debug = False, proxy = proxy_url) as session:
         response = await session.search_by_image("path/to/image.jpg")
         response = await session.search_by_text("rose-colored glasses")
         
